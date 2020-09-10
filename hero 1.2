@@ -1,0 +1,29 @@
+# 定义英雄和怪物类别函数
+"""
+Created on Thu Sep 10 10:30:36 2020
+
+@author: tute
+"""
+
+def hero(name,hp,attack):
+    def kill(h):
+        print("hero %s attacking monster!" %h['name'])
+        data = {
+            'name':name,
+            'hp':hp,
+            'attack':attack,
+            'kill':kill,
+            }
+        return data
+
+def monster (name,hp,monster_type):
+    def walking(m):
+        print("monster %s :walking!"%m['name'])
+        
+    data = {
+        'name':name,
+        'hp':hp,
+        'type':monster_type,
+        'walking':walking,
+    }
+    return data
