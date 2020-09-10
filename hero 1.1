@@ -1,0 +1,34 @@
+#定义英雄和怪物的模板
+"""
+Spyder Editor
+
+This is a new hero file.
+"""
+
+def hero (name , hp , attack):
+    data = {
+        'name':name,
+        'hp':hp,
+        'attack':attack
+        }
+    return data
+
+def monster (name,hp,monster_type):
+    data={
+        'name':name,
+        'hp':hp,
+        'type':monster_type
+        }
+    return data
+
+hero2=hero('zx',120,100)
+monster1=monster('turtle',200,'turtle')
+
+def kill(h):
+    print("hero%s attacking monster!"%h['name'])
+def walking(m):
+    print("monster %s : Walking!"%m['name'])
+
+kill (hero2)
+walking(monster1)
+
